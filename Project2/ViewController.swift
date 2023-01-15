@@ -19,6 +19,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
+        
         button1.layer.borderWidth = 1
         button2.layer.borderWidth = 1
         button3.layer.borderWidth = 1
@@ -30,6 +33,11 @@ class ViewController: UIViewController {
        
         askQuestion(action: nil)
        
+    }
+    @objc func shareTapped() {
+        let ac = UIAlertController(title: "Your score is \(score).", message: "", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Done", style: .default))
+        present(ac, animated: true)
     }
     
     func askQuestion(action: UIAlertAction!) {
