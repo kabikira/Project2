@@ -19,6 +19,9 @@
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDI-O7-wSM">
                                 <rect key="frame" x="107" y="227" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UDI-O7-wSM" secondAttribute="height" multiplier="2:1" id="8kh-pd-McM"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="us"/>
                                 <connections>
@@ -27,6 +30,9 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XX0-e6-PnZ">
                                 <rect key="frame" x="107" y="357" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XX0-e6-PnZ" secondAttribute="height" multiplier="2:1" id="Zj5-9D-PKc"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="us"/>
                                 <connections>
@@ -35,6 +41,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18x-Ml-FwP">
                                 <rect key="frame" x="107" y="97" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="18x-Ml-FwP" secondAttribute="height" multiplier="2:1" id="kCG-aj-Kvp"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="us"/>
                                 <connections>
@@ -45,9 +54,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="XX0-e6-PnZ" secondAttribute="bottom" constant="20" id="5UL-hM-arm"/>
+                            <constraint firstItem="XX0-e6-PnZ" firstAttribute="height" secondItem="UDI-O7-wSM" secondAttribute="height" id="Ecc-a0-LNs"/>
                             <constraint firstItem="UDI-O7-wSM" firstAttribute="top" secondItem="18x-Ml-FwP" secondAttribute="bottom" constant="30" id="H4W-e1-edD"/>
                             <constraint firstItem="XX0-e6-PnZ" firstAttribute="centerX" secondItem="UDI-O7-wSM" secondAttribute="centerX" id="NOh-as-yNM"/>
                             <constraint firstItem="XX0-e6-PnZ" firstAttribute="top" secondItem="UDI-O7-wSM" secondAttribute="bottom" constant="30" id="cJ5-nQ-uW6"/>
+                            <constraint firstItem="UDI-O7-wSM" firstAttribute="height" secondItem="18x-Ml-FwP" secondAttribute="height" id="hTU-WT-0bm"/>
                             <constraint firstItem="UDI-O7-wSM" firstAttribute="centerX" secondItem="18x-Ml-FwP" secondAttribute="centerX" id="j7Y-AK-Lgl"/>
                             <constraint firstItem="18x-Ml-FwP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rV3-ZM-dIy"/>
                             <constraint firstItem="18x-Ml-FwP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="zRH-5W-B4O"/>
